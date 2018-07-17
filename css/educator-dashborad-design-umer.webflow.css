@@ -1628,7 +1628,7 @@
   position: fixed;
   display: block;
   width: 250px;
-  height: 100vh;
+  height: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -1707,9 +1707,15 @@
 }
 
 .body-3 {
+  height: 100%;
   border-bottom-style: solid;
   border-bottom-color: #000;
-  background-color: rgba(0, 0, 0, .09);
+  background-color: hsla(0, 0%, 100%, .97);
+  background-image: url('../images/classcss2.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
   color: transparent;
   font-size: 13px;
 }
@@ -1717,6 +1723,7 @@
 .link-8 {
   position: relative;
   top: 0px;
+  padding: 17px;
   color: #000;
   text-decoration: none;
 }
@@ -1808,13 +1815,16 @@
   margin-top: 8px;
   margin-right: -2px;
   margin-bottom: 11px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .12);
   border-radius: 64px;
   background-color: #fff;
   background-image: url('../images/34202.svg');
   background-position: 50% 50%;
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  box-shadow: 0 0 6px 0 #b4b4b4;
+  box-shadow: 1px -1px 2px -1px rgba(0, 0, 0, .62);
 }
 
 .image-18 {
@@ -1872,14 +1882,17 @@
   height: 119px;
   margin-right: 16px;
   margin-left: 16px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .08);
   background-color: #fff;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .62);
+  box-shadow: 1px -1px 2px -1px rgba(0, 0, 0, .62);
 }
 
 .classroom_div {
   height: 227px;
   background-color: #fff;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .62);
+  box-shadow: 1px -1px 2px -1px rgba(0, 0, 0, .62);
 }
 
 .classroom_image {
@@ -1902,8 +1915,8 @@
 
 .update_text {
   margin-top: 38px;
-  margin-right: 57px;
-  margin-left: 57px;
+  margin-right: 0px;
+  margin-left: 0px;
   color: rgba(0, 0, 0, .39);
 }
 
@@ -2284,6 +2297,86 @@
   bottom: 87px;
 }
 
+.div-block-30 {
+  display: none;
+  margin-right: 764px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.link-11 {
+  position: relative;
+  top: -9px;
+  right: 0px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 500px;
+  height: 48px;
+  margin-top: -26px;
+  margin-right: 0px;
+  margin-left: 36px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #000;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-11:hover {
+  background-color: rgba(0, 0, 0, .38);
+  color: #fff;
+}
+
+.background_image {
+  overflow: scroll;
+  height: 100%;
+  background-color: hsla(0, 0%, 100%, .82);
+  text-align: justify;
+}
+
+.add_class {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  margin: 24px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(0, 0, 0, .1);
+  border-radius: 124px;
+  background-color: hsla(0, 0%, 100%, .64);
+  box-shadow: 1px -1px 2px -1px #000;
+}
+
+.image-19 {
+  border-radius: 85px;
+  background-color: hsla(0, 0%, 49%, .66);
+}
+
 @media (max-width: 991px) {
   .leftnavigation {
     display: none;
@@ -2387,6 +2480,23 @@
   .section-3 {
     margin-left: 0px;
   }
+  .column-2 {
+    padding-bottom: 70px;
+  }
+  .column-3 {
+    padding-bottom: 70px;
+  }
+  .section-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 0px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
   .navbar-3 {
     display: none;
     text-align: center;
@@ -2411,6 +2521,10 @@
     position: relative;
     left: -139px;
     top: 18px;
+  }
+  .body-3 {
+    background-size: cover;
+    background-repeat: repeat-y;
   }
   .search-3 {
     position: relative;
@@ -2438,7 +2552,7 @@
   }
   .div-block-22 {
     width: 207px;
-    margin-top: -38px;
+    margin-top: 0px;
     margin-left: 31px;
   }
   .section-6 {
@@ -2464,6 +2578,21 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .div-block-30 {
+    position: relative;
+    top: -93px;
+    margin-right: 0px;
+  }
+  .link-11 {
+    top: 0px;
+    width: 207px;
+    margin-top: 0px;
+    margin-left: 31px;
+  }
+  .background_image {
+    overflow: scroll;
+    height: 100%;
   }
 }
 
@@ -2496,6 +2625,7 @@
   .container-4 {
     height: 100px;
     margin-top: 0px;
+    margin-left: 366px;
     padding-bottom: 0px;
   }
   .div-block-22 {
@@ -2512,6 +2642,17 @@
   .div-block-26 {
     position: relative;
     right: -83px;
+  }
+  .div-block-30 {
+    top: -58px;
+  }
+  .link-11 {
+    top: -21px;
+    bottom: -1px;
+    margin-top: 6px;
+  }
+  .background_image {
+    overflow: scroll;
   }
 }
 
@@ -2537,19 +2678,32 @@
     right: -12px;
     margin-top: -49px;
   }
+  .body-3 {
+    background-color: transparent;
+  }
   .search-input-3 {
     margin-right: 2px;
-    margin-left: 2px;
+    margin-left: 57px;
     padding-right: 0px;
     padding-left: 0px;
   }
   .div-block-22 {
-    display: none;
+    display: block;
   }
   .classroom_image {
     display: none;
   }
   .number_of_student_text {
     padding-right: 11px;
+  }
+  .folower_text {
+    top: 56px;
+    bottom: 0px;
+  }
+  .div-block-30 {
+    margin-top: 0px;
+  }
+  .background_image {
+    overflow: scroll;
   }
 }
